@@ -65,6 +65,7 @@
       }
       */
 
+      /*
       var bb = [12, 3, 4, 5, 6, 7, 3, 8, 9];
       //var bb1 = new Array(22, 33, 67, 3);
       //var bb2 = Array(34, 57, 27.8, 1);
@@ -85,6 +86,43 @@
       sumary(x, y);
       sumary(24, 78);
       sumary(9, 6372);
+      */
+
+      // OBJECTS
+
+      /*
+      var tank = new Object();
+      tank.name = "Russian";
+      */
+
+      function details() {
+        document.write("Name: " + this.name + " HP: " + this.health + "<br>");
+      }
+
+      function war(player1, player2) {
+        player1.health - player2.attack;
+      }
+
+      var tank = {
+        name: "Russian",
+        health: 340,
+        attack: 78,
+        info: details,
+        war: war,
+      };
+
+      var tank2 = {
+        name: "American",
+        health: 400,
+        attack: 66,
+        info: details,
+      };
+
+      //alert(tank.health);
+      /*tank.info();
+      tank2.info();*/
+
+      war(tank, tank2);
     </script>
   </body>
 </html>
