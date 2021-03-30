@@ -4,13 +4,17 @@
     <title>Javascript</title>
   </head>
   <body>
-    <h1>Hello all Javascript lovers</h1>
+    <div id="wrapp">
+      <h1 id="title">Hello all Javascript lovers</h1>
 
-    <h1>Hello all Javascript lovers</h1>
-    <h1>Hello all Javascript lovers</h1>
-    <h1>Hello all Javascript lovers</h1>
-    <h1>Hello all Javascript lovers</h1>
-    <h1>Hello all Javascript lovers</h1>
+      <nav id="mainNav">
+        <ul id="mainList">
+          <li>Element Node</li>
+          <li>Atribute Node 2</li>
+          <li>Text Node</li>
+        </ul>
+      </nav>
+    </div>
 
     <script>
       /*
@@ -95,6 +99,7 @@
       tank.name = "Russian";
       */
 
+      /*
       function details() {
         document.write("Name: " + this.name + " HP: " + this.health + "<br>");
       }
@@ -122,7 +127,22 @@
       /*tank.info();
       tank2.info();*/
 
+      /*
       war(tank, tank2);
+      */
+
+      /*
+      var item = document.getElementById("title");
+      item.innerHTML = "Welcome to DOM";
+      item.style.color = "blue";
+      var li = document.getElementsByTagName("li");
+
+      for (var i = 0; i < li.length; i++) {
+        console.log(li[li]);
+      }*/
+
+      var item = document.getElementById("wrapp");
+      console.log(item.children.length);
     </script>
   </body>
 </html>
