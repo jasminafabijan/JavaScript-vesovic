@@ -2,147 +2,60 @@
   <head>
     <meta charset="UTF-8" />
     <title>Javascript</title>
-  </head>
-  <body>
-    <div id="wrapp">
-      <h1 id="title">Hello all Javascript lovers</h1>
 
-      <nav id="mainNav">
-        <ul id="mainList">
-          <li>Element Node</li>
-          <li>Atribute Node 2</li>
-          <li>Text Node</li>
-        </ul>
-      </nav>
-    </div>
+    <style>
+      #div1,
+      #div2,
+      #div3 {
+        width: 100px;
+        height: 50px;
+        float: left;
+        margin: 30px;
+      }
+
+      #div1 {
+        background-color: aqua;
+      }
+
+      #div2 {
+        background-color: red;
+      }
+
+      #div3 {
+        background-color: navy;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="div1" onclick="sayHi();"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
 
     <script>
-      /*
-      var input = prompt("What is your favorite food?");
-      if (input == "pizza") {
-        document.write("Today there is a free pizza in the town.");
-        if (1==1) {
-
-        }else {
-
-        }
-      } else if (input == "pasta") {
-        document.write("Today you can buy pasta in the town, for $1.");
-      }
-      */
-
-      /*
-      switch (input) {
-        case "pizza":
-          document.write("Today there is a free pizza in the town.");
-          break;
-        case "pasta":
-          document.write("Today you can buy pasta in the town, for $1.");
-          break;
-        default:
-          document.write("We don't have a special offer for this food..");
-      }
-      */
-
-      /*
-      var input = prompt("What is your favorite food?");
-      var i = 0;
-      while (i < 10) {
-        document.write("<h1>Today is a nice day</h1>");
-        i = i + 1;
-      }
-      */
-
-      /*
-      var input = prompt("What is your favorite food?");
-      var i = 1;
-      while (i < 7) {
-        document.write("<h" + i + ">Today is a nice day</h" + i + ">");
-        i = i + 1;
-      }
-      */
-
-      // For loop
-      /*
-      for (var i = 1; i < 7; i++) {
-        document.write("<h" + i + ">Today is a nice day</h" + i + ">");
-      }
-      */
-
-      /*
-      var bb = [12, 3, 4, 5, 6, 7, 3, 8, 9];
-      //var bb1 = new Array(22, 33, 67, 3);
-      //var bb2 = Array(34, 57, 27.8, 1);
-      document.write(bb[7]);
-
-      var h = document.getElementsByTagName("h1");
-      var x = [1, 2, 3, 5, 6];
-
-      x[100] = 22;
-
-      var x = 33;
-      var y = 1000;
-
-      function sumary(number1, number2) {
-        alert(number1 + number2);
+      // First way
+      function sayHi() {
+        alert("hallo");
       }
 
-      sumary(x, y);
-      sumary(24, 78);
-      sumary(9, 6372);
-      */
-
-      // OBJECTS
-
-      /*
-      var tank = new Object();
-      tank.name = "Russian";
-      */
-
-      /*
-      function details() {
-        document.write("Name: " + this.name + " HP: " + this.health + "<br>");
-      }
-
-      function war(player1, player2) {
-        player1.health - player2.attack;
-      }
-
-      var tank = {
-        name: "Russian",
-        health: 340,
-        attack: 78,
-        info: details,
-        war: war,
+      // Second way
+      var div2 = document.getElementById("div2");
+      div2.onclick = function () {
+        div2.style.opacity = "0.2";
       };
 
-      var tank2 = {
-        name: "American",
-        health: 400,
-        attack: 66,
-        info: details,
-      };
+      // Third way (the best)
+      var div3 = document.getElementById("div3");
+      div3.addEventListener("click", sayName); // we don't call function here, just assign
 
-      //alert(tank.health);
-      /*tank.info();
-      tank2.info();*/
+      function sayName() {
+        alert("something else");
+      }
 
-      /*
-      war(tank, tank2);
-      */
-
-      /*
-      var item = document.getElementById("title");
-      item.innerHTML = "Welcome to DOM";
-      item.style.color = "blue";
-      var li = document.getElementsByTagName("li");
-
-      for (var i = 0; i < li.length; i++) {
-        console.log(li[li]);
-      }*/
-
-      var item = document.getElementById("wrapp");
-      console.log(item.children.length);
+      div3.addEventListener("click", plus);
+      function plus() {
+        alert(2 + 2);
+      }
     </script>
   </body>
 </html>
