@@ -1,0 +1,20 @@
+.semaphore-light {
+  width: 60px;
+  height: 200px;
+  border: 1px solid silver;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.colors {
+  width: 50px;
+  height: 50px;
+  border: 1px solid silver;
+  border-radius: 50px;
+  margin: 5px;
+}
+
+#semaphore1 {
+  margin-bottom: 30px;
+}

@@ -3,59 +3,22 @@
     <meta charset="UTF-8" />
     <title>Javascript</title>
 
-    <style>
-      #div1,
-      #div2,
-      #div3 {
-        width: 100px;
-        height: 50px;
-        float: left;
-        margin: 30px;
-      }
-
-      #div1 {
-        background-color: aqua;
-      }
-
-      #div2 {
-        background-color: red;
-      }
-
-      #div3 {
-        background-color: navy;
-      }
-    </style>
+    <link rel="stylesheet" href="main.css" />
   </head>
 
   <body>
-    <div id="div1" onclick="sayHi();"></div>
-    <div id="div2"></div>
-    <div id="div3"></div>
+    <div id="semaphore1" class="semaphore-light">
+      <div class="colors colors1"></div>
+      <div class="colors colors1"></div>
+      <div class="colors colors1"></div>
+    </div>
 
-    <script>
-      // First way
-      function sayHi() {
-        alert("hallo");
-      }
+    <div id="semaphore2" class="semaphore-light">
+      <div class="colors colors2"></div>
+      <div class="colors colors2"></div>
+      <div class="colors colors2"></div>
+    </div>
 
-      // Second way
-      var div2 = document.getElementById("div2");
-      div2.onclick = function () {
-        div2.style.opacity = "0.2";
-      };
-
-      // Third way (the best)
-      var div3 = document.getElementById("div3");
-      div3.addEventListener("click", sayName); // we don't call function here, just assign
-
-      function sayName() {
-        alert("something else");
-      }
-
-      div3.addEventListener("click", plus);
-      function plus() {
-        alert(2 + 2);
-      }
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
