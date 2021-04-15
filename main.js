@@ -11,6 +11,7 @@ function run() {
 }
 */
 
+/*
 function semaphore() {
   var colors = document.getElementsByClassName("colors");
   colors[0].style.background = "red";
@@ -55,3 +56,37 @@ var start = setInterval(semaphore2, 8000);
 
 semaphore();
 semaphore2();
+*/
+
+// Arrays
+var banknotes = [100, 200, 500];
+/*
+banknotes.pop();
+console.log(banknotes);
+*/
+/*
+var x = banknotes.pop();
+console.log(x);
+*/
+/*
+banknotes.push(2000);
+console.log(banknotes);
+*/
+banknotes[3] = 2000;
+console.log(banknotes);
+banknotes[1000] = 23;
+console.log(banknotes);
+console.log(banknotes.length);
+console.log(banknotes[500]);
+
+var banknotes2 = [100, 200, 500, null, [1, 2, 3], { x: 1, y: 2 }];
+console.log(banknotes2);
+
+var money = banknotes.concat();
+console.log(money);
+
+money[0] = "gold";
+console.log(money);
+
+banknotes.splice(1, 1);
+console.log(banknotes);
