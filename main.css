@@ -18,3 +18,12 @@
 #semaphore1 {
   margin-bottom: 30px;
 }
+
+#scroll {
+  width: 400px;
+  height: 200px;
+  border: 1px solid gray;
+  text-align: center;
+  font-size: 30px;
+  line-height: 200px;
+}
