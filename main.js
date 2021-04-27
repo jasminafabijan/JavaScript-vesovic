@@ -72,6 +72,8 @@ console.log(x);
 banknotes.push(2000);
 console.log(banknotes);
 */
+
+/*
 banknotes[3] = 2000;
 console.log(banknotes);
 banknotes[1000] = 23;
@@ -90,3 +92,20 @@ console.log(money);
 
 banknotes.splice(1, 1);
 console.log(banknotes);
+*/
+
+// Date Object
+
+var timer = document.getElementById("timer");
+var loop;
+
+function displayTime() {
+  var now = new Date();
+  var h = now.getHours();
+  var m = now.getMinutes();
+  var s = now.getSeconds();
+
+  timer.innerHTML = h + "h:" + m + "m:" + s + "s";
+}
+
+loop = setInterval(displayTime, 1000);
