@@ -1,0 +1,16 @@
+#score1,
+#score2 {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#score1 {
+    background-color: yellow;
+}
+
+#score2 {
+    background-color: aquamarine;
+}
