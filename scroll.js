@@ -19,7 +19,7 @@ function sleep() {
 function makeText() {
   var text = "Sublime Text";
   var text1 = "Visual Studio";
-  var text2 = "Atom";
+  var text2 = "Toma";
 
   var stext = text.split("");
   var stext1 = text1.split("");
